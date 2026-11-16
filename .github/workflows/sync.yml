@@ -40,4 +40,10 @@ jobs:
           git add -A
           if git diff --cached --quiet; then echo "Yangi narsa yo'q"; exit 0; fi
           git commit -m "Telegram'dan yangilandi"
-          git push
+          if ! git push; then
+            # Boshqa run oldinroq push qilgan bo'lsa: to'liq qurilgan saytni uning ustiga qo'yamiz
+            git fetch origin main
+            git reset --soft origin/main
+            git commit -m "Telegram'dan yangilandi"
+            git push
+          fi
