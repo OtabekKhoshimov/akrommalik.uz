@@ -1,0 +1,28 @@
+    <article class="article {{kind_class}}">
+      <div class="wrap-narrow">
+        <a class="back" href="../">← {{back}}</a>
+        <h1>{{title}}</h1>
+        <div class="meta"><span class="kind">{{kind}}</span><time datetime="{{iso}}">{{date}}</time> · {{minutes}} daqiqa o‘qish</div>
+      </div>
+      <div class="wrap-narrow">
+        {{hero}}
+        {{cyr}}
+        <div class="prose">
+{{body}}
+        </div>
+        <div class="tags">{{tags}}</div>
+        <div class="share">
+          <a class="btn btn-outline" href="{{tg_link}}" target="_blank" rel="noopener">Telegram’da izoh qoldirish</a>
+          <a class="btn btn-ghost-dark" href="https://t.me/share/url?url={{share}}" target="_blank" rel="noopener">Ulashish</a>
+        </div>
+        <aside class="author">
+          <img src="../../assets/img/avatar.jpg" alt="">
+          <div>
+            <b>Akrom Malik</b>
+            <p>Adib, shoir, navoiyshunos olim. Filologiya fanlari bo‘yicha falsafa doktori (PhD).</p>
+            <a href="https://t.me/{{telegram}}" target="_blank" rel="noopener">Kanalga obuna bo‘lish →</a>
+          </div>
+        </aside>
+        <nav class="post-nav">{{nav}}</nav>
+      </div>
+    </article>

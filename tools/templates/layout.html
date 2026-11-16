@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}">
+  <link rel="canonical" href="{{canonical}}">
+  <meta property="og:type" content="{{og_type}}">
+  <meta property="og:title" content="{{title}}">
+  <meta property="og:description" content="{{description}}">
+  <meta property="og:image" content="{{og_image}}">
+  <meta property="og:url" content="{{canonical}}">
+  <meta property="og:site_name" content="Akrom Malik">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#17213a">
+  <link rel="icon" href="{{root}}favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{root}}assets/style.css?v=1">
+</head>
+<body class="{{body_class}}">
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="{{root}}"><span class="brand-mark">AM</span><span class="brand-name">Akrom Malik</span></a>
+      <nav class="nav" id="nav">
+        <a href="{{root}}haqida/">Haqida</a>
+        <a href="{{root}}maqolalar/">Maqolalar</a>
+        <a href="{{root}}sherlar/">She’rlar</a>
+        <a href="{{root}}mumtoz-oila/">«Mumtoz oila»</a>
+        <a href="{{root}}loyihalar/">Loyihalar</a>
+        <a href="{{root}}kitoblar/">Kitoblar</a>
+        <a href="{{root}}videolar/">Videolar</a>
+        <a class="nav-tg" href="https://t.me/{{telegram}}" target="_blank" rel="noopener">Telegram</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Menyu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+{{content}}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <div class="brand"><span class="brand-mark">AM</span><span class="brand-name">Akrom Malik</span></div>
+        <p class="muted">Adib, shoir, navoiyshunos olim. Filologiya fanlari bo‘yicha falsafa doktori (PhD).</p>
+      </div>
+      <div class="footer-col">
+        <b>Sayt</b>
+        <a href="{{root}}haqida/">Haqida</a>
+        <a href="{{root}}maqolalar/">Maqolalar</a>
+        <a href="{{root}}sherlar/">She’rlar</a>
+        <a href="{{root}}mumtoz-oila/">«Mumtoz oila» risolasi</a>
+        <a href="{{root}}kitoblar/">Kitoblar</a>
+      </div>
+      <div class="footer-col">
+        <b>Loyihalar</b>
+        <a href="{{root}}loyihalar/#alifbo">Mumtoz alifbo tahsili</a>
+        <a href="{{root}}loyihalar/#suhbatlar">Mumtoz suhbatlar</a>
+        <a href="{{root}}videolar/">Videolar</a>
+        <a href="{{root}}elonlar/">E’lonlar</a>
+      </div>
+      <div class="footer-col">
+        <b>Aloqa</b>
+        <a href="https://t.me/{{telegram}}" target="_blank" rel="noopener">Telegram kanal</a>
+        <a href="https://t.me/{{maktub}}" target="_blank" rel="noopener">Maktub yozish (bot)</a>
+        <a href="{{youtube}}" target="_blank" rel="noopener">YouTube</a>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <p class="muted small">© {{year}} Akrom Malik. Maqolalar, she’rlar va e’lonlar <a href="https://t.me/{{telegram}}" target="_blank" rel="noopener">@{{telegram}}</a> Telegram kanalidan avtomatik olinadi.</p>
+    </div>
+  </footer>
+  <script src="{{root}}assets/script.js?v=1"></script>
+</body>
+</html>
